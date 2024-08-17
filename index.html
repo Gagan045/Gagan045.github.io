@@ -3,103 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gagan Kumar Konduri's Resume</title>
+    <title>Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
+            margin: 20px;
             line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #444;
-        }
-        .contact-info {
-            text-align: center;
-        }
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+
+        h1 {
+            font-size: 25px;
             margin-bottom: 10px;
         }
-        .project-item {
+
+        h2 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #000;
+        }
+
+        .section {
             margin-bottom: 15px;
         }
+
         ul {
-            list-style-type: square;
-            margin-left: 20px;
+            list-style-type: disc;
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        .contact-info, .contact-info a {
+            display: inline-block;
+            margin-right: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .project, .experience, .education {
+            margin-bottom: 10px;
+        }
+
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .one-column {
+            margin-top: 5px;
+        }
+
+        .highlight-item {
+            margin-bottom: 5px;
+        }
+
+        .highlight-item a {
+            color: black;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <h1>Gagana Kumar Konduri</h1>
     <div class="contact-info">
-        <h1>Gagana Kumar Konduri</h1>
-        <p>Gannavaram | <a href="mailto:konduri.gagan04@gmail.com">konduri.gagan04@gmail.com</a> | +91 7842559116</p>
-        <p><a href="https://www.linkedin.com/in/gagana-kumar-konduri-801386240/" target="_blank">LinkedIn</a> | <a href="https://github.com/Gagan045" target="_blank">GitHub</a></p>
+        <span>Gannavaram</span>
+        <a href="mailto:konduri.gagan04@gmail.com">konduri.gagan04@gmail.com</a>
+        <a href="tel:+91 7842559116">+91 7842559116</a>
+        <a href="https://www.linkedin.com/in/gagana-kumar-konduri-801386240/">linkedin.com/in/Gagana Kumar Konduri</a>
+        <a href="https://github.com/Gagan045">github.com/Gagan045</a>
     </div>
 
     <div class="section">
         <h2>Education</h2>
-        <p><strong>Vasavi College of Engineering</strong> - BE in CSE-AIML (Dec 2021 - June 2025)</p>
-        <p>GPA: 8.56</p>
+        <div class="two-column">
+            <div class="education">
+                <strong>Vasavi College of Engineering</strong>, BE in CSE-AIML
+            </div>
+            <div>
+                Dec 2021 - June 2025
+            </div>
+        </div>
+        <div class="one-column">
+            <ul>
+                <li>GPA: 8.56</li>
+            </ul>
+        </div>
     </div>
 
     <div class="section">
         <h2>Experience</h2>
-        <p><strong>Summer Intern, Providence India</strong> (11 June 2024 – 9 Aug 2024)</p>
-        <ul>
-            <li>Developed an Azure Function in C# to trigger Fast APIs for incident and prediction data storage, using OpenAI for data analysis.</li>
-            <li>Created REST APIs in .NET to efficiently store data in a database.</li>
-        </ul>
+        <div class="two-column">
+            <div class="experience">
+                <strong>Summer Intern</strong>, Providence India
+            </div>
+            <div>
+                11 June 2024 – 9 Aug 2024
+            </div>
+        </div>
+        <div class="one-column">
+            <ul>
+                <li>Developed an Azure Function in C# to trigger Fast APIs for incident and prediction data storage, using OpenAI for data analysis. Created REST APIs in .NET to efficiently store data in a database.</li>
+            </ul>
+        </div>
     </div>
 
     <div class="section">
         <h2>Projects</h2>
-
-        <div class="project-item">
-            <h3>AI Driven Insights for Ticket Resolutions (Jun 2024 - Aug 2024)</h3>
-            <p><em>Technologies: C#, .NET, Python, PostgreSQL</em></p>
+        <div class="two-column">
+            <div class="project">
+                <strong>AI Driven Insights for Ticket Resolutions</strong> | C#, .NET, Python, PostgreSQL
+            </div>
+            <div>
+                Jun 2024 - Aug 2024
+            </div>
+        </div>
+        <div class="one-column">
             <ul>
-                <li>Developed an Azure Function to process incoming incident data, integrating with Restful API and 4 Fast API’s to predict priority, identify similar incidents, classify categories, and generate resolution notes.</li>
+                <li>Developed an Azure Function to process incoming incident data, integrating with Restful API and 4 Fast APIs to predict priority, identify similar incidents, classify categories, and generate resolution notes.</li>
                 <li>Implemented end-to-end data flow from incident ingestion to prediction, enhancing real-time incident management and response with predictive analytics.</li>
             </ul>
         </div>
 
-        <div class="project-item">
-            <h3>WASTE MANAGEMENT (2023-2024)</h3>
-            <p><em>Technologies: Deep Learning, Python, MySQL, PHP</em></p>
+        <div class="two-column">
+            <div class="project">
+                <strong>WASTE MANAGEMENT</strong> | Deep Learning, Python, MySQL, PHP
+            </div>
+            <div>
+                2023-2024
+            </div>
+        </div>
+        <div class="one-column">
             <ul>
-                <li>End-to-End Waste Management Project: integrated Resnet-50 for precision segregation, optimized transportation, and deployed IoT smart bins.</li>
-                <li>Developed a dynamic website for seamless user interaction, promoting community engagement and raising environmental awareness.</li>
+                <li>End-to-End Waste Management Project: Integrated Resnet-50 for precision segregation, optimized transportation, and deployed IoT smart bins.</li>
+                <li>User-Centric Dynamic Web Platform: Developed a dynamic website for seamless user interaction, promoting community engagement, and raising environmental awareness.</li>
             </ul>
         </div>
 
-        <div class="project-item">
-            <h3>YOLOv5 for Lung Cancer Detection (Feb 2024 - May 2024)</h3>
-            <p><em>Technologies: Deep Learning, YOLOv5, Python</em></p>
+        <div class="two-column">
+            <div class="project">
+                <strong>YOLOv5 for Lung Cancer Detection</strong> | Deep Learning, YOLOv5, Python
+            </div>
+            <div>
+                Feb 2024 - May 2024
+            </div>
+        </div>
+        <div class="one-column">
             <ul>
                 <li>Designed and implemented a YOLOv5 model for automated lung cancer detection in medical images.</li>
                 <li>Applied deep learning techniques to enhance early diagnosis, improving radiologists' efficiency in identifying potential cancerous regions in lung scans.</li>
@@ -109,31 +158,38 @@
 
     <div class="section">
         <h2>Technologies</h2>
-        <p><strong>Languages:</strong> C, Python, Java, C#, SQL, JavaScript</p>
-        <p><strong>Databases:</strong> MySQL, PostgreSQL</p>
-        <p><strong>Frameworks/Libraries:</strong> React, Flask, Bootstrap, Streamlit, TensorFlow, PyTorch, Keras</p>
-        <p><strong>Software/Tools:</strong> .NET, Visual Studio Code, Visual Studio</p>
+        <div class="one-column">
+            <ul>
+                <li><strong>Languages:</strong> C, Python, Java, C#, SQL, JavaScript</li>
+                <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+                <li><strong>Frameworks/Libraries:</strong> React, Flask, Bootstrap, Streamlit, TensorFlow, PyTorch, Keras</li>
+                <li><strong>Software/Tools:</strong> .NET, Visual Studio Code, Visual Studio</li>
+            </ul>
+        </div>
     </div>
 
     <div class="section">
-        <h2>Extra-Curricular</h2>
-        <ul>
-            <li>Computer Society of India branch Student Coordinator</li>
-            <li>Organizing Committee Lead Acumen Tech Fest (College Fest) 2024</li>
-            <li>Student Coordinator of AIML Club, CSE</li>
-            <li>Member of Epowertech coding club in college</li>
-        </ul>
+        <h2>Extra-Curricular Activities</h2>
+        <div class="one-column">
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1tTPl5nJKhkd2cUFYH4xTWvjXXY0LFvwZ/view?usp=sharing">Computer Society of India branch Student Coordinator</a></li>
+                <li>Directed the Acumen Tech Fest 2024 organizing committee, coordinating over 50 team members.</li>
+                <li>Student Coordinator of AIML Club, CSE</li>
+                <li>Member of Epowertech coding club in college</li>
+            </ul>
+        </div>
     </div>
 
     <div class="section">
         <h2>Achievements</h2>
-        <ul>
-            <li>Winners of Smart Hacks-2k23, Anurag University</li>
-            <li>Runner ups of Innovasia 2023, Vasavi College of Engineering</li>
-            <li>Finalist of Accenture Innovasia Challenge 2023, Accenture</li>
-        </ul>
+        <div class="one-column">
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1wwt91dfkUqkTP4ELD90vvsELWbhhHyHx/view?usp=sharing">Winners of Smart Hacks-2k23, Anurag University</a></li>
+                <li><a href="https://drive.google.com/file/d/1HJiwVDinsbI6UOuhYYE5mk5enBT0aYOt/view?usp=sharing">Runner ups of Innovasia 2023, Vasavi College of Engineering</a></li>
+                <li><a href="https://drive.google.com/file/d/1HLn7FrdpnhE0D--x7FZdTIfJrQEiPZvF/view?usp=sharing">Finalist of Accenture Innovasia Challenge 2023, Accenture</a></li>
+            </ul>
+        </div>
     </div>
-</div>
 
 </body>
 </html>
